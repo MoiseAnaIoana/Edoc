@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+   <title></title>
+    <link rel="stylesheet" href="events.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#">Edoc-hub</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">Edoc-hub</span>
+          <i class='bx bx-x' ></i>
+        </div>
+        <ul class="links">
+          <li><a href="startpage.html">Startpage</a></li>
+          <li>
+            <a href="profil.html">My account</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="portofolio.html">My portofolio</a></li>
+              <li><a href="facultatile_Mele.html">My faculty</a></li>
+              <li><a href="profil.html">My profile</a></li>
+
+            </ul>
+          </li>
+          <li>
+            <a href="#">Event</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href=".html"></a></li>
+              <li><a href="pregatire.html">Training</a></li>
+              <li><a href="cultural.html">Cultural</a></li>
+            </ul>
+          </li>
+          <li><a href="facultati.html">Admission</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <script src="events.js"></script>
+</body>
+<div class="container mt-5">
+  <div class="row d-flex justify-content-center">
+      <div class="col-md-6">
+          <div class="card px-5 py-5" id="form1">
+              <div class="form-data" v-if="!submitted">
+                  <div class="forms-inputs mb-4"> <span>Email or username</span> <input autocomplete="off" type="text" v-model="email" v-bind:class="{'form-control':true, 'is-invalid' : !validEmail(email) && emailBlured}" v-on:blur="emailBlured = true">
+                      <div class="invalid-feedback">Add a valid email address!</div>
+                  </div>
+                  <div class="forms-inputs mb-4"> <span>Password</span> <input autocomplete="off" type="password" v-model="password" v-bind:class="{'form-control':true, 'is-invalid' : !validPassword(password) && passwordBlured}" v-on:blur="passwordBlured = true">
+                      <div class="invalid-feedback">The password must have 8 characters!</div>
+                  </div>
+                  <div class="mb-3"> <button v-on:click.stop.prevent="submit" class="btn btn-dark w-100">Login</button> </div>
+              </div>
+              <div class="success-data" v-else>
+                  <div class="text-center d-flex flex-column"> <i class='bx bxs-badge-check'></i> <span class="text-center fs-1">Ai reusit sa te loghezi <br> cu succes!</span> </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</html>

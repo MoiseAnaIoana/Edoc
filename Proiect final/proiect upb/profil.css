@@ -1,0 +1,26 @@
+body {
+       background-color:lightgrey;
+}
+
+h2, h3 {
+    text-align:center;
+}
+
+h1{
+    font-size:200;
+    font-size:50%;
+}
+
+p{
+    text-align:left;
+}
+
+.edit {
+    color: rgb(70,95,109);
+    margin-right: 20px;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}

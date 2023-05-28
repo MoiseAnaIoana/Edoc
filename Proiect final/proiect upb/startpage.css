@@ -1,0 +1,27 @@
+header {
+    margin-top: 80px;
+    position: relative
+}
+
+header .navbar .container {
+    display: flex;
+    justify-content: center;
+}
+
+header a{
+    height: 100%;
+    text-decoration: none;
+    white-space: nowrap;
+    color: inherit;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 95px;
+}
+
+header .container {
+    color: rgb(70,95,109);
+}
+
+header .container:hover {
+    color: white;
+}
